@@ -1,0 +1,205 @@
+
+body {
+    height: 1080px;
+    width: 1920px;
+    background-color: #3b3b3b;
+    overflow: hidden;
+}
+
+.mesto {
+    position: absolute;
+    width: 50%;
+    left: 25%;
+    top: 5%;
+    opacity: 90%;
+}
+
+.grm {
+    position: absolute;
+    width: 110%;
+    top: 58.5%;
+    left: -10px;
+}
+
+.lamp1 {
+    position: absolute;
+    width: 100px;
+    left: 310px;
+    top: 270px;
+}
+
+.z1, .z2 {
+    fill: white;
+}
+
+.z1:active, .z1:focus, .z2:active, .z2:focus {
+    fill: #ebb400;
+    outline: none;
+}
+
+#o1:active, #o1:focus, #o3:active, #o3:focus, #o6:active, #o6:focus, #o15:active, #o15:focus {
+    fill: #ebb400;
+    outline: none;
+}
+
+#o8:active, #o8:focus, #o13:active, #o13:focus {
+    fill: white;
+    outline: none;
+}
+
+#o14:active, #o14:focus, #o4:active, #o4:focus {
+    fill: #f6bbb6;
+    outline: none;
+}
+
+#o16:active, #o16:focus, #o17:active, #o17:focus, #o19:active, #o19:focus, #o20:active, #o20:focus {
+    fill: #ebb400;
+    outline: none;
+}
+
+
+.lamp2 {
+    position: absolute;
+    width: 100px;
+    left: 1500px;
+    top: 260px;
+
+}
+
+#vlak {
+    -webkit-animation: vlak 2s infinite ease-in-out;
+    -moz-animation: vlak 2s infinite ease-in-out;
+    animation: vlak 2s infinite ease-in-out;
+}
+
+    #vlak:active, #vlak:focus {
+        -webkit-animation-play-state: paused;
+        -moz-animation-play-state: paused;
+        animation-play-state: paused;
+        outline: none;
+    }
+
+@-webkit-keyframes vlak {
+    0% {transform: translateX(25px)}
+    100% {transform: translateX(-70px)}
+}
+
+@-moz-keyframes vlak {
+    0% {transform: translateX(25px)}
+    100% {transform: translateX(-70px)}
+}
+
+@keyframes vlak {
+    0% {transform: translateX(25px)}
+    100% {transform: translateX(-70px)}
+}
+
+.cesta {
+    position: fixed;
+    top: 850px;
+    left: 0;
+    width: 100%;
+    height: 30%;
+    background-color: black;
+    z-index: 1;
+}
+
+
+.container {
+    height: 100%;
+    width: 100%;
+}
+
+
+.avto {
+    width:700px;
+    top: 350px;
+    left: -800px;
+    position: absolute;
+    -webkit-animation: avto 8s linear infinite;
+    -webkit-animation-delay: 2s;
+    -moz-animation: avto 8s linear infinite;
+    -moz-animation-delay: 2s;
+    animation: avto 8s linear infinite;
+    animation-delay: 2s;
+}
+
+
+@-webkit-keyframes avto {
+    0% {transform: translateX(0)}
+    100% {transform: translateX(3000px)}
+}
+
+@-moz-keyframes avto {
+    0% {transform: translateX(0)}
+    100% {transform: translateX(3000px)}
+}
+
+    @keyframes avto {
+        0% {transform: translateX(0)}
+        100% {transform: translateX(3000px)}
+    }
+
+
+#kolesa {
+    -webkit-animation: kolesa 0.1s linear infinite;
+    -moz-animation: kolesa 0.1s linear infinite;
+    animation: kolesa 0.1s linear infinite;
+    transform-origin: center;
+}
+
+@-webkit-keyframes kolesa {
+    0% {transform: translateY(-0.5px)}
+    100% {transform: translateY(0px)}
+}
+
+@-moz-keyframes kolesa {
+    0% {transform: translateY(-0.5px)}
+    100% {transform: translateY(0px)}
+}
+
+@keyframes kolesa {
+    0% {transform: translateY(-0.5px)}
+    100% {transform: translateY(0px)}
+}
+
+    #kolo1 {
+        -webkit-animation: rotacija_kolesa 6s infinite linear;
+        -moz-animation: rotacija_kolesa 6s infinite linear;
+        animation: rotacija_kolesa 6s infinite linear;
+        transform-origin: center;
+        transform-box: fill-box;
+    }
+
+
+.st22 {
+    -webkit-animation: rotacija_kolesa 6s infinite linear;
+    -moz-animation: rotacija_kolesa 6s infinite linear;
+    animation: rotacija_kolesa 6s infinite linear;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@-webkit-keyframes rotacija_kolesa {
+    100%  {
+        transform: rotateZ(360deg);
+    }
+}
+
+@-moz-keyframes rotacija_kolesa {
+    100%  {
+        transform: rotateZ(360deg);
+    }
+}
+
+    @keyframes rotacija_kolesa {
+        100%  {
+            transform: rotateZ(360deg);
+        }
+    }
+
+
+
+
+
+

@@ -1,0 +1,524 @@
+
+body {
+    height: 1080px;
+    width: 1920px;
+    background-color: #0f0f0f;
+    overflow: hidden;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
+/*scena*/
+
+.saturn {
+    position: absolute;
+    top: 60%;
+    left: 10%;
+    width: 400px;
+    opacity: 90%;
+}
+
+.saturn:hover {
+    transform: scale(1.05);
+    opacity: 100%;
+}
+
+.planet {
+    position: absolute;
+    top: 15%;
+    left: 8%;
+    width: 150px;
+    opacity: 80%;
+}
+
+.planet:hover {
+    transform: scale(1.2);
+    opacity: 100%;
+}
+
+.ozvezdje {
+    position: absolute;
+    top: 70%;
+    left: 55%;
+    width: 400px;
+    transform: rotateZ(-2deg);
+}
+
+.krog {
+    position: absolute;
+    top: 8%;
+    left: 65%;
+    width: 250px;
+    opacity: 90%;
+}
+
+#pot1, #pot3 {
+    -webkit-animation: rotacija 120s infinite linear;
+    -moz-animation: rotacija 120s infinite linear;
+    animation: rotacija 120s infinite linear;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+#pot2, #krog4 {
+    -webkit-animation: rotacija 120s infinite linear reverse;
+    -moz-animation: rotacija 120s infinite linear reverse;
+    animation: rotacija 120s infinite linear reverse;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+
+@-webkit-keyframes rotacija {
+    0% {transform: rotateZ(0deg);
+    }
+    100%  {
+        transform: rotateZ(360deg);
+    }
+}
+
+@-moz-keyframes rotacija {
+    0% {transform: rotateZ(0deg);
+    }
+    100%  {
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes rotacija {
+    0% {transform: rotateZ(0deg);
+    }
+    100%  {
+        transform: rotateZ(360deg);
+    }
+}
+
+.zvezde{
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    width: 500px;
+}
+
+.zvezde2{
+    position: absolute;
+    top: 10%;
+    left: 48%;
+    width: 650px;
+}
+
+
+
+.nlp {
+    top: 20%;
+    margin-left: -250px;
+    width: 500px;
+    position: absolute;
+    -webkit-animation: nlp 8s infinite ease-in-out;
+    -moz-animation: nlp 8s infinite ease-in-out;
+    animation: nlp 8s infinite ease-in-out;
+}
+
+@-webkit-keyframes nlp {
+    0% {transform: rotate(-10deg); left: 200%;}
+    15% {transform: rotate(-10deg);}
+    30% {left: 45%; transform: rotate(10deg);}
+    40% {left: 50%; transform: rotate(0deg) translateY(0px);}
+    45% {left: 50%; transform: rotate(0deg) translateY(-10px);}
+    50% { left: 50%; transform: rotate(0deg) translateY(0px);}
+    60% {left: 55%; transform: rotate(-10deg);}
+    61% {left: 55%;}
+    100% {left: -100%;}
+}
+
+@-moz-keyframes nlp {
+    0% {transform: rotate(-10deg); left: 200%;}
+    15% {transform: rotate(-10deg);}
+    30% {left: 45%; transform: rotate(10deg);}
+    40% {left: 50%; transform: rotate(0deg) translateY(0px);}
+    45% {left: 50%; transform: rotate(0deg) translateY(-10px);}
+    50% { left: 50%; transform: rotate(0deg) translateY(0px);}
+    60% {left: 55%; transform: rotate(-10deg);}
+    61% {left: 55%;}
+    100% {left: -100%;}
+}
+
+    @keyframes nlp {
+        0% {transform: rotate(-10deg); left: 200%;}
+        15% {transform: rotate(-10deg);}
+        30% {left: 45%; transform: rotate(10deg);}
+        40% {left: 50%; transform: rotate(0deg) translateY(0px);}
+        45% {left: 50%; transform: rotate(0deg) translateY(-10px);}
+        50% {left: 50%; transform: rotate(0deg) translateY(0px);}
+        60% {left: 55%; transform: rotate(-10deg);}
+        61% {left: 55%;}
+        100% {left: -100%;}
+    }
+
+
+.luc_1 {
+    position: relative;
+    -webkit-animation: luc1 0.5s infinite linear;
+    -moz-animation: luc1 0.5s infinite linear;
+    animation: luc1 0.5s infinite linear;
+}
+
+@-webkit-keyframes luc1 {
+    0% {fill: #023D5DFF;}
+    25% {fill: #ebb400;}
+    50% {fill: #f6bbb6;}
+    100% {fill: white;}
+}
+
+@-moz-keyframes luc1 {
+    0% {fill: #023D5DFF;}
+    25% {fill: #ebb400;}
+    50% {fill: #f6bbb6;}
+    100% {fill: white;}
+}
+
+    @keyframes luc1 {
+        0% {fill: #023D5D;}
+        25% {fill: #ebb400;}
+        50% {fill: #f6bbb6;}
+        100% {fill: white;}
+    }
+
+
+.luc_2 {
+    position: relative;
+    -webkit-animation: luc2 0.5s infinite linear;
+    -moz-animation: luc2 0.5s infinite linear;
+    animation: luc2 0.5s infinite linear;
+}
+
+@-webkit-keyframes luc2 {
+    0% {fill: #ebb400;}
+    25% {fill: #f6bbb6;}
+    50% {fill: white;}
+    100% {fill: #023D5DFF;}
+}
+
+@-moz-keyframes luc2 {
+    0% {fill: #ebb400;}
+    25% {fill: #f6bbb6;}
+    50% {fill: white;}
+    100% {fill: #023D5DFF;}
+}
+
+    @keyframes luc2 {
+        0% {fill: #ebb400;}
+        25% {fill: #f6bbb6;}
+        50% {fill: white;}
+        100% {fill: #023D5DFF;}
+    }
+
+.luc_3 {
+    position: relative;
+    -webkit-animation: luc3 0.5s infinite linear;
+    -moz-animation: luc3 0.5s infinite linear;
+    animation: luc3 0.5s infinite linear;
+}
+
+@-webkit-keyframes luc3 {
+    0% {fill: #f6bbb6;}
+    25% {fill: white;}
+    50% {fill: #023D5DFF;}
+    100% {fill: #ebb400;}
+}
+
+@-moz-keyframes luc3 {
+    0% {fill: #f6bbb6;}
+    25% {fill: white;}
+    50% {fill: #023D5DFF;}
+    100% {fill: #ebb400;}
+}
+
+@keyframes luc3 {
+    0% {fill: #f6bbb6;}
+    25% {fill: white;}
+    50% {fill: #023D5DFF;}
+    100% {fill: #ebb400;}
+}
+
+.luc_4 {
+    position: relative;
+    -webkit-animation: luc4 0.5s infinite linear;
+    -moz-animation: luc4 0.5s infinite linear;
+    animation: luc4 0.5s infinite linear;
+}
+
+@-webkit-keyframes luc4 {
+    0% {fill: white;}
+    25% {fill: #023D5DFF;}
+    50% {fill: #ebb400;}
+    100% {fill: #f6bbb6;}
+}
+
+@-moz-keyframes luc4 {
+    0% {fill: white;}
+    25% {fill: #023D5DFF;}
+    50% {fill: #ebb400;}
+    100% {fill: #f6bbb6;}
+}
+
+@keyframes luc4 {
+    0% {fill: white;}
+    25% {fill: #023D5DFF;}
+    50% {fill: #ebb400;}
+    100% {fill: #f6bbb6;}
+}
+
+.luc_5 {
+    position: relative;
+    -webkit-animation: luc1 0.5s infinite linear;
+    -moz-animation: luc1 0.5s infinite linear;
+    animation: luc1 0.5s infinite linear;
+}
+
+.utrip1 {
+    position: relative;
+    -webkit-animation: luc1 0.5s infinite linear;
+    -moz-animation: luc1 0.5s infinite linear;
+    animation: luc1 0.5s infinite linear;
+}
+
+.utrip2 {
+    position: relative;
+    -webkit-animation: luc1 0.5s infinite linear reverse;
+    -moz-animation: luc1 0.5s infinite linear reverse;
+    animation: luc1 0.5s infinite linear reverse;
+}
+
+
+#trip2_1_ {
+    -webkit-animation: luc3 0.5s infinite linear;
+    -moz-animation: luc3 0.5s infinite linear;
+    animation: luc3 0.5s infinite linear;
+}
+
+
+.abduct {
+    top: 60%;
+    margin-left: 8%;
+    width: 450px;
+    position: absolute;
+
+}
+
+.abduct1 {
+    position: absolute;
+    left: 32px;
+    border: 3px solid #bcbcbc;
+    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+    transform: rotateX(75deg);
+    -webkit-animation: abduct 8s infinite, abductcolor 16s infinite;
+    -moz-animation: abduct 8s infinite, abductcolor 16s infinite;
+    animation: abduct 8s infinite, abductcolor 16s infinite;
+}
+
+.abduct2 {
+    position: absolute;
+    left: 32px;
+    top: 50px;
+    border: 3px solid #bcbcbc;
+    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+    transform: rotateX(75deg);
+    -webkit-animation: abductreverse 8s 0.1s infinite, abductcolor 16s infinite;
+    -moz-animation: abductreverse 8s 0.1s infinite, abductcolor 16s infinite;
+    animation: abductreverse 8s 0.1s infinite, abductcolor 16s infinite;
+}
+
+.abduct3 {
+    position: absolute;
+    left: 32px;
+    top: 33px;
+    border: 3px solid #bcbcbc;
+    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+    transform: rotateX(75deg);
+    -webkit-animation: abduct 8s 0.2s infinite, abductcolor 16s infinite;
+    -moz-animation: abduct 8s 0.2s infinite, abductcolor 16s infinite;
+    animation: abduct 8s 0.2s infinite, abductcolor 16s infinite;
+}
+
+.abduct4 {
+    position: absolute;
+    left: 30px;
+    top: 50px;
+    border: 3px solid #bcbcbc;
+    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+    transform: rotateX(75deg);
+    -webkit-animation: abductreverse 8s infinite, abductcolor 16s infinite;
+    -moz-animation: abductreverse 8s infinite, abductcolor 16s infinite;
+    animation: abductreverse 8s infinite, abductcolor 16s infinite;
+}
+
+.abduct5 {
+    position: absolute;
+    left: 32px;
+    top: 70px;
+    border: 3px solid #bcbcbc;
+    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+    transform: rotateX(75deg);
+    -webkit-animation: abductreverse 8s infinite, abductcolor 16s infinite;
+    -moz-animation: abductreverse 8s infinite, abductcolor 16s infinite;
+    animation: abductreverse 8s infinite, abductcolor 16s infinite;
+}
+
+    @-webkit-keyframes abduct {
+        0% {opacity: 0;}
+        42% {opacity: 0;}
+        43% {opacity: 0.8; transform: rotateX(75deg) translateY(0px);}
+        45% { transform: rotateX(75deg) translateY(200px) scale(0.8); opacity: 0.8;}
+        47% {transform: rotateX(75deg) translateY(0px); opacity: 0.8;}
+        48% {opacity: 0;}
+        100% {opacity: 0;}
+    }
+
+@-moz-keyframes abduct {
+    0% {opacity: 0;}
+    42% {opacity: 0;}
+    43% {opacity: 0.8; transform: rotateX(75deg) translateY(0px);}
+    45% { transform: rotateX(75deg) translateY(200px) scale(0.8); opacity: 0.8;}
+    47% {transform: rotateX(75deg) translateY(0px); opacity: 0.8;}
+    48% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+    @keyframes abduct {
+        0% {opacity: 0;}
+        42% {opacity: 0;}
+        43% {opacity: 0.8; transform: rotateX(75deg) translateY(0px);}
+        45% {transform: rotateX(75deg) translateY(200px) scale(0.8); opacity: 0.8;}
+        47% {transform: rotateX(75deg) translateY(0px); opacity: 0.8;}
+        48% {opacity: 0;}
+        100% {opacity: 0;}
+    }
+
+@-webkit-keyframes abductreverse {
+    0% {opacity: 0;}
+    42% {opacity: 0;}
+    43% { opacity: 0.8; transform: rotateX(75deg) translateY(0px);}
+    45% {opacity: 0.8; transform: rotateX(75deg) translateY(-350px);}
+    48% {opacity: 0.8; transform: rotateX(75deg) translateY(0px);}
+    49% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+@-moz-keyframes abductreverse {
+    0% {opacity: 0;}
+    42% {opacity: 0;}
+    43% { opacity: 0.8; transform: rotateX(75deg) translateY(0px);}
+    45% {opacity: 0.8; transform: rotateX(75deg) translateY(-350px);}
+    48% {opacity: 0.8; transform: rotateX(75deg) translateY(0px);}
+    49% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+@keyframes abductreverse {
+    0% {opacity: 0;}
+    42% {opacity: 0;}
+    43% { opacity: 0.8; transform: rotateX(75deg) translateY(0px);}
+    45% {opacity: 0.8; transform: rotateX(75deg) translateY(-350px);}
+    48% {opacity: 0.8; transform: rotateX(75deg) translateY(0px);}
+    49% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+@-webkit-keyframes abductcolor {
+    0% {border: 3px solid #bcbcbc;}
+    20% {border: 3px solid #bcbcbc;}
+    21% {border: 3px solid #bcbcbc;}
+    70% {border: 3px solid #bcbcbc;}
+    71% {border: 3px solid #bcbcbc;}
+    100% {border: 3px solid #bcbcbc;}
+}
+
+@-moz-keyframes abductcolor {
+    0% {border: 3px solid #bcbcbc;}
+    20% {border: 3px solid #bcbcbc;}
+    21% {border: 3px solid #bcbcbc;}
+    70% {border: 3px solid #bcbcbc;}
+    71% {border: 3px solid #bcbcbc;}
+    100% {border: 3px solid #bcbcbc;}
+}
+
+@keyframes abductcolor {
+    0% {border: 3px solid #bcbcbc;}
+    20% {border: 3px solid #bcbcbc;}
+    21% {border: 3px solid #bcbcbc;}
+    70% {border: 3px solid #bcbcbc;}
+    71% {border: 3px solid #bcbcbc;}
+    100% {border: 3px solid #bcbcbc;}
+}
+
+
+/*animacija zvezd*/
+
+.zvezdice, .utripanje {
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    width:100%;
+    height:100%;
+    display:block;
+    margin: 0;
+    padding: 0;
+
+}
+
+    .zvezdice {
+        background:#000 url(zvezdice.png) repeat top center;
+        z-index:0;
+        margin: 0;
+        padding: 0;
+    }
+
+    .utripanje {
+        background:transparent url(utripanje.png) repeat top center;
+        z-index:1;
+        margin: 0;
+        padding: 0;
+        -webkit-animation:utripanje 200s linear infinite;
+        -moz-animation:utripanje 200s linear infinite;
+        animation:utripanje 200s linear infinite;
+    }
+
+    @keyframes utripanje {
+        from {background-position:0 0;}
+        to {background-position:-10000px 5000px;}
+    }
+
+@-webkit-keyframes utripanje {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+
+@-moz-keyframes utripanje {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+
+
+
+
+
+
+

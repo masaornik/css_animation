@@ -1,0 +1,817 @@
+
+    body {
+        height: 1080px;
+        width: 1920px;
+        background-color: #bcbcbc;
+        overflow: hidden;
+    }
+
+    .balon {
+        top: 20%;
+        left: 35%;
+        width: 550px;
+        position: absolute;
+        -webkit-animation: balon 5s infinite;
+        -moz-animation: balon 5s infinite;
+        animation: balon 5s infinite;
+        z-index: 4;
+    }
+
+    @-webkit-keyframes balon {
+
+        0% {
+            transform: rotate(0deg) translate(0)
+        }
+        25% {
+            transform: rotate(1.5deg) translateY(4px)
+        }
+        50% {
+            transform: rotate(-1.5deg) translateY(-10px)
+        }
+        75% {
+            transform: rotate(-1.5deg) translateY(10px)
+        }
+        100% {
+            transform: rotate(0deg) translate(0)
+        }
+    }
+
+@-moz-keyframes balon {
+
+    0% {
+        transform: rotate(0deg) translate(0)
+    }
+    25% {
+        transform: rotate(1.5deg) translateY(4px)
+    }
+    50% {
+        transform: rotate(-1.5deg) translateY(-10px)
+    }
+    75% {
+        transform: rotate(-1.5deg) translateY(10px)
+    }
+    100% {
+        transform: rotate(0deg) translate(0)
+    }
+}
+
+    @keyframes balon {
+        0% {
+            transform: rotate(0deg) translate(0)
+        }
+        25% {
+            transform: rotate(1.5deg) translateY(4px)
+        }
+        50% {
+            transform: rotate(-1.5deg) translateY(-10px)
+        }
+        75% {
+            transform: rotate(-1.5deg) translateY(10px)
+        }
+        100% {
+            transform: rotate(0deg) translate(0)
+        }
+    }
+
+
+/*balon-interactive*/
+
+    .st1:active, .st1:focus {
+        fill: #023d5d;
+        outline: none;
+    }
+
+.st2:active, .st2:focus {
+    fill: #EBB400FF;
+    outline: none;
+}
+
+.st4:active {
+    fill: #007765FF;
+}
+
+.st5:active, .st5:focus {
+    fill: #007765FF;
+    outline: none;
+}
+
+
+/*sprednji/začetni oblaki*/
+
+.oblak_sp1 {
+    width: 500px;
+    position: absolute;
+    left: 900px;
+    top: -150%;
+    -webkit-animation: oblaksp1 20s linear;
+    -moz-animation: oblaksp1 20s linear;
+    animation: oblaksp1 20s linear;
+    z-index: 3;
+}
+
+@-webkit-keyframes oblaksp1 {
+
+    0% {
+        top: 50%;
+    }
+
+    100% {
+        top: 100%;
+    }
+}
+
+@-moz-keyframes oblaksp1 {
+
+    0% {
+        top: 50%;
+    }
+
+    100% {
+        top: 100%;
+    }
+}
+
+@keyframes oblaksp1 {
+
+    0% {
+        top: 50%;
+    }
+
+    100% {
+        top: 100%;
+    }
+}
+
+.oblak_sp2 {
+    width: 250px;
+    position: absolute;
+    left: 500px;
+    top: -150%;
+    -webkit-animation: oblaksp2 40s linear;
+    -moz-animation: oblaksp2 40s linear;
+    animation: oblaksp2 40s linear;
+    z-index: 3;
+    opacity: 50%;
+}
+
+@-webkit-keyframes oblaksp2 {
+
+    0% {
+        top: 10%;
+    }
+
+    100% {
+        top: 100%;
+    }
+}
+
+@-moz-keyframes oblaksp2 {
+
+    0% {
+        top: 10%;
+    }
+
+    100% {
+        top: 100%;
+    }
+}
+
+@keyframes oblaksp2 {
+
+    0% {
+        top: 10%;
+    }
+
+    100% {
+        top: 100%;
+    }
+}
+
+.oblak_sp3 {
+    width: 400px;
+    position: absolute;
+    left: 400px;
+    top: -150%;
+    -webkit-animation: oblaksp3 30s linear;
+    -moz-animation: oblaksp3 30s linear;
+    animation: oblaksp3 30s linear;
+    z-index: 3;
+}
+
+@-webkit-keyframes oblaksp3 {
+
+    0% {
+        top: 20%;
+    }
+
+    100% {
+        top: 100%;
+    }
+}
+
+@-moz-keyframes oblaksp3 {
+
+    0% {
+        top: 20%;
+    }
+
+    100% {
+        top: 100%;
+    }
+}
+
+@keyframes oblaksp3 {
+
+    0% {
+        top: 20%;
+    }
+
+    100% {
+        top: 100%;
+    }
+}
+
+.oblak_sp4 {
+    width: 400px;
+    position: absolute;
+    left: 950px;
+    top: -150%;
+    -webkit-animation: oblaksp4 30s linear;
+    -moz-animation: oblaksp4 30s linear;
+    animation: oblaksp4 30s linear;
+    z-index: 3;
+}
+
+@-webkit-keyframes oblaksp4 {
+
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: 100%;
+    }
+}
+
+@-moz-keyframes oblaksp4 {
+
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: 100%;
+    }
+}
+
+@keyframes oblaksp4 {
+
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: 100%;
+    }
+}
+
+
+/*infinite loop oblaki*/
+
+    .oblak1 {
+        width: 900px;
+        position: absolute;
+        left: 500px;
+        -webkit-animation: oblak1 30s infinite linear;
+        -moz-animation: oblak1 30s infinite linear;
+        animation: oblak1 30s infinite linear;
+        z-index: 3;
+    }
+
+@-webkit-keyframes oblak1 {
+
+    0% {
+        top: -100%;
+    }
+
+    100% {
+        top: 30%;
+    }
+}
+
+@-moz-keyframes oblak1 {
+
+    0% {
+        top: -100%;
+    }
+
+    100% {
+        top: 30%;
+    }
+}
+
+    @keyframes oblak1 {
+
+        0% {
+            top: -100%;
+        }
+
+        100% {
+            top: 30%;
+        }
+    }
+
+.oblak2 {
+    width: 700px;
+    position: absolute;
+    left: 800px;
+    -webkit-animation: oblak2 30s infinite linear;
+    -moz-animation: oblak2 30s infinite linear;
+    animation: oblak2 30s infinite linear;
+    z-index: 3;
+}
+
+@-webkit-keyframes oblak2 {
+
+    0% {
+        top: -70%;
+    }
+
+    100% {
+        top: 80%;
+    }
+}
+
+@-moz-keyframes oblak2 {
+
+    0% {
+        top: -70%;
+    }
+
+    100% {
+        top: 80%;
+    }
+}
+
+@keyframes oblak2 {
+
+    0% {
+        top: -70%;
+    }
+
+    100% {
+        top: 80%;
+    }
+}
+
+.oblak3 {
+    width: 300px;
+    position: absolute;
+    left: 1000px;
+    -webkit-animation: oblak3 70s infinite linear;
+    -moz-animation: oblak3 70s infinite linear;
+    animation: oblak3 70s infinite linear;
+    z-index: 1;
+    opacity: 50%;
+}
+
+@-webkit-keyframes oblak3 {
+
+    0% {
+        top: -50%;
+    }
+
+    100% {
+        top: 100%;
+    }
+
+}
+
+@-moz-keyframes oblak3 {
+
+    0% {
+        top: -50%;
+    }
+
+    100% {
+        top: 100%;
+    }
+
+}
+
+@keyframes oblak3 {
+
+    0% {
+        top: -50%;
+    }
+
+    100% {
+        top: 100%;
+    }
+
+}
+
+.oblak4 {
+    width: 150px;
+    position: absolute;
+    left: 450px;
+    -webkit-animation: oblak4 80s infinite linear;
+    -moz-animation: oblak4 80s infinite linear;
+    animation: oblak4 80s infinite linear;
+    z-index: 1;
+    opacity: 50%;
+}
+
+@-webkit-keyframes oblak4 {
+
+    0% {
+        top: -40%;
+    }
+
+    100% {
+        top: 100%;
+    }
+
+}
+
+@-moz-keyframes oblak4 {
+
+    0% {
+        top: -40%;
+    }
+
+    100% {
+        top: 100%;
+    }
+
+}
+
+@keyframes oblak4 {
+
+    0% {
+        top: -40%;
+    }
+
+    100% {
+        top: 100%;
+    }
+
+}
+
+.oblak5 {
+    width: 500px;
+    position: absolute;
+    left: 300px;
+    top: -150%;
+    -webkit-animation: oblak5 40s infinite linear;
+    -webkit-animation-delay: 10s;
+    -moz-animation: oblak5 40s infinite linear;
+    -moz-animation-delay: 10s;
+    animation: oblak5 40s infinite linear;
+    animation-delay: 10s;
+    z-index: 3;
+}
+
+@-webkit-keyframes oblak5 {
+
+    0% {
+        top: -60%;
+    }
+
+    100% {
+        top: 100%;
+    }
+
+}
+
+@-moz-keyframes oblak5 {
+
+    0% {
+        top: -60%;
+    }
+
+    100% {
+        top: 100%;
+    }
+
+}
+
+@keyframes oblak5 {
+
+    0% {
+        top: -60%;
+    }
+
+    100% {
+        top: 100%;
+    }
+
+}
+
+.oblak6 {
+    width: 500px;
+    position: absolute;
+    top: -150%;
+    left: 1000px;
+    -webkit-animation: oblak6 30s infinite linear;
+    -webkit-animation-delay: 5s;
+    -moz-animation: oblak6 30s infinite linear;
+    -moz-animation-delay: 5s;
+    animation: oblak6 30s infinite linear;
+    animation-delay: 5s;
+    z-index: 5;
+}
+
+@-webkit-keyframes oblak6 {
+
+    0% {
+        top: -60%;
+    }
+
+    100% {
+        top: 100%;
+    }
+
+}
+
+@-moz-keyframes oblak6 {
+
+    0% {
+        top: -60%;
+    }
+
+    100% {
+        top: 100%;
+    }
+
+}
+
+@keyframes oblak6 {
+
+    0% {
+        top: -60%;
+    }
+
+    100% {
+        top: 100%;
+    }
+
+}
+
+.oblak7 {
+    width: 500px;
+    position: absolute;
+    top: -150%;
+    left: 400px;
+    -webkit-animation: oblak7 60s infinite linear;
+    -webkit-animation-delay: 20s;
+    -moz-animation: oblak7 60s infinite linear;
+    -moz-animation-delay: 20s;
+    animation: oblak7 60s infinite linear;
+    animation-delay: 20s;
+    z-index: 2;
+    opacity: 90%;
+}
+
+@-webkit-keyframes oblak7 {
+
+    0% {
+        top: -60%;
+    }
+
+    100% {
+        top: 80%;
+    }
+
+}
+
+@-moz-keyframes oblak7 {
+
+    0% {
+        top: -60%;
+    }
+
+    100% {
+        top: 80%;
+    }
+
+}
+
+@keyframes oblak7 {
+
+    0% {
+        top: -60%;
+    }
+
+    100% {
+        top: 80%;
+    }
+
+}
+
+.oblak8 {
+    width: 300px;
+    position: absolute;
+    top: -150%;
+    left: 1200px;
+    -webkit-animation: oblak8 60s infinite linear;
+    -webkit-animation-delay: 20s;
+    -moz-animation: oblak8 60s infinite linear;
+    -moz-animation-delay: 20s;
+    animation: oblak8 60s infinite linear;
+    animation-delay: 20s;
+    z-index: 1;
+    opacity: 50%;
+}
+
+@-webkit-keyframes oblak8 {
+
+    0% {
+        top: -50%;
+    }
+
+    100% {
+        top: 90%;
+    }
+
+}
+
+@-moz-keyframes oblak8 {
+
+    0% {
+        top: -50%;
+    }
+
+    100% {
+        top: 90%;
+    }
+
+}
+
+@keyframes oblak8 {
+
+    0% {
+        top: -50%;
+    }
+
+    100% {
+        top: 90%;
+    }
+
+}
+
+.oblak9 {
+    width: 600px;
+    position: absolute;
+    top: -150%;
+    left: 900px;
+    -webkit-animation: oblak9 40s infinite linear;
+    -webkit-animation-delay: 40s;
+    -moz-animation: oblak9 40s infinite linear;
+    -moz-animation-delay: 40s;
+    animation: oblak9 40s infinite linear;
+    animation-delay: 40s;
+    z-index: 3;
+    opacity: 90%;
+}
+
+@-webkit-keyframes oblak9 {
+
+    0% {
+        top: -50%;
+    }
+
+    100% {
+        top: 90%;
+    }
+
+}
+
+@-moz-keyframes oblak9 {
+
+    0% {
+        top: -50%;
+    }
+
+    100% {
+        top: 90%;
+    }
+
+}
+
+@keyframes oblak9 {
+
+    0% {
+        top: -50%;
+    }
+
+    100% {
+        top: 90%;
+    }
+
+}
+
+.oblak10 {
+    width: 500px;
+    position: absolute;
+    top: -150%;
+    left: 900px;
+    -webkit-animation: oblak10 30s infinite linear;
+    -webkit-animation-delay: 60s;
+    -moz-animation: oblak10 30s infinite linear;
+    -moz-animation-delay: 60s;
+    animation: oblak10 30s infinite linear;
+    animation-delay: 60s;
+    z-index: 5;
+}
+
+@-webkit-keyframes oblak10 {
+
+    0% {
+        top: -50%;
+    }
+
+    100% {
+        top: 90%;
+    }
+
+}
+
+@-moz-keyframes oblak10 {
+
+    0% {
+        top: -50%;
+    }
+
+    100% {
+        top: 90%;
+    }
+
+}
+
+@keyframes oblak10 {
+
+    0% {
+        top: -50%;
+    }
+
+    100% {
+        top: 90%;
+    }
+
+}
+
+.oblak11 {
+    width: 200px;
+    position: absolute;
+    top: 150%;
+    left: 500px;
+    -webkit-animation: oblak11 50s infinite linear;
+    -webkit-animation-delay: 30s;
+    -moz-animation: oblak11 50s infinite linear;
+    -moz-animation-delay: 30s;
+    animation: oblak11 50s infinite linear;
+    animation-delay: 30s;
+    z-index: 1;
+    opacity: 50%;
+}
+
+@-webkit-keyframes oblak11 {
+
+    0% {
+        top: -50%;
+    }
+
+    100% {
+        top: 90%;
+    }
+
+}
+
+@-moz-keyframes oblak11 {
+
+    0% {
+        top: -50%;
+    }
+
+    100% {
+        top: 90%;
+    }
+
+}
+
+@keyframes oblak11 {
+
+    0% {
+        top: -50%;
+    }
+
+    100% {
+        top: 90%;
+    }
+
+}
+
+
+
+
